@@ -2,7 +2,7 @@
 
 # Read data
 with open('data/d06.txt') as f:
-    orig_data = [int(x) for x in f.readlines()]
+    orig_data = [ int(x) for x in f.read().spit() ]
 
 
 # -- Problem 1 function --
