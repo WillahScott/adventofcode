@@ -10,7 +10,7 @@ printf -v padded "%02d" $DAYNUM  # pad the number provided
 NODATA=false
 HELP=false
 
-while getopts "o:n:h:" opt; do
+while getopts "n:h:" opt; do
     case $opt in
         n)
             NODATA=true;;
