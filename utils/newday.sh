@@ -76,7 +76,7 @@ t_start="# Advent of code - DAY ${DAYNUM}"$'\n\n'  # single quotes for \n
 if ! $NODATA; then
     t_data="# Read data
 with open('data/d${padded}.txt') as f:
-    orig_data = [int(x) for x in f.readlines()]
+    orig_data = f.read()
 "
 else
     t_data=""
@@ -85,7 +85,7 @@ fi
 t_body="
 
 # -- Problem 1 function --
-def part1(data, verbose=False):
+def part1(orig_data, verbose=False):
     pass
 
 # Test
@@ -99,14 +99,14 @@ part1(data)
 
 
 # -- Problem 2 function --
-def part2(data, verbose=False):
+def part2(orig_data, verbose=False):
     pass
 
 # Test
 part2(test, verbose=True)
   # > ?
 
-# Run problem 1
+# Run problem 2
 part2(data)
   # > ?
 "
