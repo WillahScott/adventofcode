@@ -1,5 +1,7 @@
 # Advent of code - DAY 11
 
+from itertools import groupby
+
 # Read data
 with open('data/d11.txt') as f:
     new_data = f.read().split(',')
