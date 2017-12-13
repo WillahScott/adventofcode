@@ -40,12 +40,14 @@ def firewall(d, start=0, verbose=False):
         depth, rang = [int(x) for x in line.split(': ')]
         
         if (start + depth) % ((rang-1)*2) == 0:
-        	return False
+        	# Caught!
+			return False
     else:
-	    return True
+		return True
 
 
 def bypass_firewall(d, verbose=False):
+	# Iteratively add one to the delay until not caught
     start = 0
     while not firewall(d, start, verbose=verbose):
         start += 1
