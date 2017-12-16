@@ -55,7 +55,12 @@ git commit -m "Day ${padded} - done"
 echo " - Committed!"
 echo ""
 
-# log history
+# Push
+echo " - Pushing..."
+git push
+echo ""
+
+# Log history
 echo " - HISTORY: "
 git log --oneline
 echo ""
