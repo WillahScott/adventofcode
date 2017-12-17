@@ -85,7 +85,7 @@ fi
 t_body="
 
 # -- Problem 1 function --
-def part1(orig_data, verbose=False):
+def part1(orig_data, *, verbose=False):
     pass
 
 # Test
@@ -99,7 +99,7 @@ part1(data)
 
 
 # -- Problem 2 function --
-def part2(orig_data, verbose=False):
+def part2(orig_data, *, verbose=False):
     pass
 
 # Test
