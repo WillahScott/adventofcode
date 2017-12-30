@@ -1,5 +1,7 @@
 # Advent of code - DAY 22
 
+import numpy as np
+
 # Read data
 with open('data/d22.txt') as f:
     data = f.readlines()
